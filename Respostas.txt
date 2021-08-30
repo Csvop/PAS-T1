@@ -1,0 +1,5 @@
+Respostas:
+  Exercicio 1
+    4) Locais comentados no código
+  Exercicio 2
+    2) O padrão DTO é usado para que possamos converter objetos do Java em objetos JSON.
