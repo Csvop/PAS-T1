@@ -1,6 +1,16 @@
-package com.bcopstein.CtrlCorredorV1.Models;
+package com.bcopstein.CtrlCorredorV1.negocio.entidades;
 
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Evento {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long nroEvento;
     private int id;
     private String nome;
     // Data do evento
@@ -25,6 +35,8 @@ public class Evento {
         this.minutos = minutos;
         this.segundos = segundos;
     }
+
+    protected Evento() {}
 
     public int getId() {
         return id;

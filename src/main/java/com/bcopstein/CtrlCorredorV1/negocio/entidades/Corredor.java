@@ -1,6 +1,16 @@
-package com.bcopstein.CtrlCorredorV1.Models;
+package com.bcopstein.CtrlCorredorV1.negocio.entidades;
 
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Corredor {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long nroCorredor;
     private String cpf;
     private String nome;
     private int diaDn,mesDn,anoDn;
@@ -14,6 +24,8 @@ public class Corredor {
         this.anoDn = anoDn;
         this.genero = genero;
     }
+
+    protected Corredor() {}
 
     public String getCpf() {
         return cpf;
