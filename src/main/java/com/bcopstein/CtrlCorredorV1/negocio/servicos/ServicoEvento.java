@@ -21,8 +21,8 @@ public class ServicoEvento {
         return eventoRep.todos();
     }
 
-    // public void cadastra(Evento evento){
-    //     eventoRep.cadastra(evento);
-    // }
+    public void cadastra(Evento evento){
+        eventoRep.cadastra(evento);
+    }
     
 }

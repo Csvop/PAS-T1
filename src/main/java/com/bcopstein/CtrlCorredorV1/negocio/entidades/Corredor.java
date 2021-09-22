@@ -1,6 +1,5 @@
 package com.bcopstein.CtrlCorredorV1.negocio.entidades;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,15 +12,15 @@ public class Corredor {
     private Long nroCorredor;
     private String cpf;
     private String nome;
-    private int diaDn,mesDn,anoDn;
+    private int dia,mes,ano;
     private String genero;
 
-    public Corredor(String cpf, String nome, int diaDn,int mesDn,int anoDn, String genero) {
+    public Corredor(String cpf, String nome, int dia,int mes,int ano, String genero) {
         this.cpf = cpf;
         this.nome = nome;
-        this.diaDn = diaDn;
-        this.mesDn = mesDn;
-        this.anoDn = anoDn;
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
         this.genero = genero;
     }
 
@@ -36,14 +35,14 @@ public class Corredor {
     }
 
     public int getDiaDn() {
-        return diaDn;
+        return dia;
     }
 
     public int getMesDn() {
-        return mesDn;
+        return mes;
     }
     public int getAnoDn() {
-        return anoDn;
+        return ano;
     }
 
     public String getGenero() {

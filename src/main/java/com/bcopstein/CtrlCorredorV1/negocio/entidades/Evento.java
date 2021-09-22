@@ -1,6 +1,5 @@
 package com.bcopstein.CtrlCorredorV1.negocio.entidades;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,8 +9,7 @@ import javax.persistence.Id;
 public class Evento {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long nroEvento;
-    private int id;
+    private Long id;
     private String nome;
     // Data do evento
     private int dia;
@@ -24,8 +22,7 @@ public class Evento {
     private int minutos;
     private int segundos;
     
-    public Evento(int id,String nome, int dia, int mes, int ano, int distancia, int horas, int minutos, int segundos) {
-        this.id = id;
+    public Evento(String nome, int dia, int mes, int ano, int distancia, int horas, int minutos, int segundos) {
         this.nome = nome;
         this.dia = dia;
         this.mes = mes;
@@ -38,7 +35,7 @@ public class Evento {
 
     protected Evento() {}
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 

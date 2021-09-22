@@ -21,9 +21,9 @@ public class ServicoCorredor {
         return corredorRep.todos();
     }
 
-    // public void cadastraCorredor(Corredor corredor){
-    //     corredorRep.removeTodos();
-    //     corredorRep.cadastra(corredor);
-    // }
+    public void cadastraCorredor(Corredor corredor){
+        corredorRep.removeTodos();
+        corredorRep.cadastra(corredor);
+    }
     
 }
