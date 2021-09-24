@@ -1,6 +1,6 @@
-GET http://localhost:8080/ctrlCorridas/estatisticas?distancia=5 HTTP/1.1
+GET https://localhost:8080/ctrlCorridas/corredor HTTP/1.1
 content-type: application/json
 
-{
-    
+{ 
+
 }
